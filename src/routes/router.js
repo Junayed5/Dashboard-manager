@@ -1,20 +1,21 @@
 import { createBrowserRouter } from "react-router";
 import App from "../App";
-import { Dashboard } from "../pages/Dashboard";
-import { Login } from "../pages/Login";
+import Login from "../pages/Login";
+import Dashboard from "../pages/Dashboard";
 
 const router = createBrowserRouter([
     {
         Component: App,
-        path:"/",
-        children:[
+        path: "/",
+        children: [
+            
             {
-                Component:Dashboard,
-                path:"/dashboard"
+                Component: Login,
+                path: "/login"
             },
             {
-                Component:Login,
-                path:"/login"
+                Component: Dashboard,
+                path: "/dashboard"
             },
         ]
     }
