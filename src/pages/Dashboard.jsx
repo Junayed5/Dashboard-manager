@@ -48,8 +48,8 @@ const Dashboard = () => {
       {/* --- SIDEBAR --- */}
       <aside className="w-20 lg:w-64 bg-slate-100 rounded-[.5rem] shadow-sm border border-slate-100 flex flex-col items-center lg:items-stretch p-6">
         <div className="flex items-center gap-3 px-2 mb-10">
-          <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">A</div>
-          <span className="hidden lg:block font-bold text-xl tracking-tight">Anywhere<span className="text-blue-500">.</span></span>
+          <img className='size-8' src="https://i.ibb.co.com/pj92KWBv/dashboard.png" alt="dbm"/>
+          <span className="hidden lg:block font-bold text-xl tracking-tight">DBM<span className="text-blue-500">.</span></span>
         </div>
 
         <nav className="flex-1 space-y-2">

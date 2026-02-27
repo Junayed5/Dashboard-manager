@@ -42,8 +42,9 @@ const Login = () => {
           {/* Header Navigation */}
           <header className="flex items-center justify-between mb-20">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-[#4A90E2] rounded-full"></div>
-              <span className="font-bold text-xl tracking-tight text-[#0f172a]">Anywhere app<span className="text-[#4A90E2]">.</span></span>
+              {/* <div className="w-8 h-8 bg-[#4A90E2] rounded-full"></div> */}
+              <img className='size-8' src="https://i.ibb.co.com/pj92KWBv/dashboard.png" alt="dbm"/>
+              <span className="font-bold text-xl tracking-tight text-[#0f172a]">Dashboard Manager<span className="text-[#4A90E2]">.</span></span>
             </div>
             <nav className="hidden sm:flex gap-8 text-slate-400 font-medium">
               <a href="#" className="hover:text-slate-600 transition-colors">Home</a>
