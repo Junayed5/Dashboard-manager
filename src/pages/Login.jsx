@@ -9,8 +9,8 @@ const Login = () => {
 
   const navigate = useNavigate();
   const [users, setUsers] = useState([]);
-
   const { register, handleSubmit, formState: { errors } } = useForm();
+
   useEffect(() => {
     axios.get("https://task-api-eight-flax.vercel.app/api/users")
       .then(res => {
@@ -18,16 +18,17 @@ const Login = () => {
       })
       .catch(err => console.error(err));
   }, [setUsers]);
+
   const onSubmit = (data) => {
     const email = data.email;
     const user = users.find(u => u.email === email);
     if (user) {
+      localStorage.setItem("user", JSON.stringify({userId: user.id, email: user.email}));
       navigate("/dashboard");
       toast.success("Login successful!");
     } else {
       toast.error("User not found. Please check your email.");
     }
-
   };
 
   return (
@@ -141,7 +142,7 @@ const Login = () => {
 
           {/* Background Image */}
           <div
-            className="absolute inset-0 bg-cover bg-center"
+            className="absolute inset-0 bg-cover bg-center bg-blend-darken bg-black/60"
             style={{ backgroundImage: `url('https://i.ibb.co.com/qMBFbFbr/bg-dm.jpg')` }}
           >
             {/* Overlay Logo Watermark */}
