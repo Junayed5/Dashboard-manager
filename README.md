@@ -1,6 +1,6 @@
-# 📊 Task Management Dashboard
+# 📊 Dashboard Manager
 
-A modern and responsive Task Management Dashboard built with React.  
+A modern and responsive Dashboard Management built with React.  
 This project was developed as part of a Frontend Intern technical assessment.
 
 ---
@@ -8,7 +8,7 @@ This project was developed as part of a Frontend Intern technical assessment.
 ## 🚀 Live Demo
 
 🔗 Live URL: _Add your deployed link here_  
-📂 GitHub Repository: _Add your repository link here_
+📂 GitHub Repository: _[](https://github.com/Junayed5/Dashboard-manager)_
 
 ---
 
@@ -33,3 +33,5 @@ The dashboard UI is implemented based on the provided design reference.
 - Axios
 - Tailwind CSS
 - REST API Integration
+
+---
