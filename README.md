@@ -7,8 +7,8 @@ This project was developed as part of a Frontend Intern technical assessment.
 
 ## 🚀 Live Demo
 
-🔗 Live URL: _Add your deployed link here_  
-📂 GitHub Repository: _[](https://github.com/Junayed5/Dashboard-manager)_
+🔗 Live URL: [](https://dashbosrd-manager.vercel.app/)  
+📂 GitHub Repository: [](https://github.com/Junayed5/Dashboard-manager)
 
 ---
 
@@ -18,7 +18,7 @@ This application includes:
 
 - 🔐 Secure Login System
 - 🛡️ Protected Dashboard Route
-- 📊 Dynamic Task Data from REST API
+- 📊 Dynamic Data from REST API
 - 📱 Fully Responsive Layout
 - ⚡ Clean & Scalable Code Structure
 

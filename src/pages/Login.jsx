@@ -27,7 +27,7 @@ const Login = () => {
       navigate("/dashboard");
       toast.success("Login successful!");
     } else {
-      toast.error("User not found. Please check your email.");
+      toast.error("User not found.");
     }
   };
 

@@ -22,6 +22,8 @@ const Dashboard = () => {
   const navigate = useNavigate();
   const [user, setUser] = useState(null);
   const [data, setData] = useState({});
+
+  const pathName = window.location.pathname;
   const userData = JSON.parse(localStorage.getItem("user"));
 
   const handleLogOut = () => {
@@ -29,6 +31,11 @@ const Dashboard = () => {
     navigate("/login");
   };
 
+  useEffect(() => {
+    if (!userData && pathName === "/dashboard") {
+      navigate("/login");
+    }
+  }, [pathName])
   useEffect(() => {
     axios.get(`https://task-api-eight-flax.vercel.app/api/users/${userData?.userId}`)
       .then(res => setUser(res.data))
@@ -40,6 +47,8 @@ const Dashboard = () => {
       .then(res => setData(res.data))
       .catch(err => console.error(err));
   }, []);
+
+
 
 
 
