@@ -46,7 +46,6 @@ const Dashboard = () => {
   return (
     <div className="flex min-h-screen font-sans text-slate-900 p-4 lg:p-6 gap-6 bg-[#F8FAFC]">
 
-      {/* --- SIDEBAR (Slide in from left) --- */}
       <motion.aside
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
@@ -75,10 +74,8 @@ const Dashboard = () => {
         </nav>
       </motion.aside>
 
-      {/* --- MAIN CONTENT --- */}
       <main className="flex-1 flex flex-col gap-6">
 
-        {/* Header (Fade Down) */}
         <motion.header
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -106,7 +103,6 @@ const Dashboard = () => {
         </motion.header>
 
         <div className="space-y-8">
-          {/* Dashboard Title Section */}
           <motion.div
             initial={{ opacity: 0 }} animate={{ opacity: 1 }}
             className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4"
@@ -125,7 +121,6 @@ const Dashboard = () => {
             </div>
           </motion.div>
 
-          {/* STATS GRID (Staggered Pop-up) */}
           <motion.div
             variants={staggerContainer} initial="initial" animate="animate"
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
@@ -136,15 +131,12 @@ const Dashboard = () => {
             <motion.div variants={fadeInUp}><StatCard title="Growth Rate" value={`${data?.overview?.growth}%`} growth="+2.1%" icon={<TrendingUp className="text-slate-400" />} /></motion.div>
           </motion.div>
 
-          {/* MAIN CONTENT GRID */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 pb-10">
 
-            {/* Analytics - Zoom in effect */}
             <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ delay: 0.2 }} className="lg:col-span-2">
               <GrowthAnalytics data={data.analytics || []} />
             </motion.div>
 
-            {/* Product Sales - Slide in from right */}
             <motion.div
               initial={{ x: 50, opacity: 0 }} animate={{ x: 0, opacity: 1 }}
               className="bg-white rounded-[2.5rem] p-8 shadow-sm border border-slate-100"
@@ -173,7 +165,6 @@ const Dashboard = () => {
               </div>
             </motion.div>
 
-            {/* Table - Staggered Rows */}
             <motion.div
               initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}
               className="lg:col-span-2 bg-white rounded-[2.5rem] p-8 shadow-sm border border-slate-100"
@@ -217,7 +208,6 @@ const Dashboard = () => {
               </div>
             </motion.div>
 
-            {/* Time Tracker - Glow Animation */}
             <motion.div
               whileHover={{ scale: 1.02 }}
               className="rounded-[2.5rem] p-8 text-white relative overflow-hidden shadow-xl bg-cover bg-center"
