@@ -1,16 +1,35 @@
-# React + Vite
+# 📊 Task Management Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive Task Management Dashboard built with React.  
+This project was developed as part of a Frontend Intern technical assessment.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## React Compiler
+🔗 Live URL: _Add your deployed link here_  
+📂 GitHub Repository: _Add your repository link here_
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+---
 
-## Expanding the ESLint configuration
+## 🧠 Project Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This application includes:
+
+- 🔐 Secure Login System
+- 🛡️ Protected Dashboard Route
+- 📊 Dynamic Task Data from REST API
+- 📱 Fully Responsive Layout
+- ⚡ Clean & Scalable Code Structure
+
+The dashboard UI is implemented based on the provided design reference.
+
+---
+
+## 🛠 Tech Stack
+
+- React (Vite)
+- React Router DOM
+- Axios
+- Tailwind CSS
+- REST API Integration
